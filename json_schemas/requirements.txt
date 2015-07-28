@@ -1,0 +1,3 @@
+json_schema_generator
+python-jsonschema-objects
+warlock

@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-03/schema", 
+    "required": true, 
+    "name":"JP",
+    "type": "object", 
+    "id": "#", 
+    "properties": {
+        "phoneNumber": {
+            "items": {
+                "required": true, 
+                "type": "object", 
+                "id": "0", 
+                "properties": {
+                    "code": {
+                        "required": true, 
+                        "type": "number", 
+                        "id": "code"
+                    }, 
+                    "location": {
+                        "required": true, 
+                        "type": "string", 
+                        "id": "location"
+                    }
+                }
+            }, 
+            "required": true, 
+            "type": "array", 
+            "id": "phoneNumber"
+        }, 
+        "address": {
+            "required": true, 
+            "type": "object", 
+            "id": "address", 
+            "properties": {
+                "city": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "city"
+                }, 
+                "streetAddress": {
+                    "required": true, 
+                    "type": "string", 
+                    "id": "streetAddress"
+                }
+            }
+        }
+    }
+}
